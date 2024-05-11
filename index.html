@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Rock Paper Scissor Game</h1>
+    <h3>Player 1: you</h3>
+    <h3>Player 2: cpu</h3>
+
+    <!-- press rock -->
+    <button onclick="
+      let myChoice = 'rock';
+      let pcChoice = cpuChoice();
+      let showResult = result(myChoice, pcChoice);
+      alert(`You have chosen ${myChoice} .CPU has chosen ${pcChoice}. ${showResult}`);
+    ">Rock</button>
+
+
+    <!-- press paper -->
+    <button onclick="
+      myChoice = 'paper';
+      pcChoice = cpuChoice();
+      showResult = result(myChoice, pcChoice);
+      alert(`You have chosen ${myChoice} .CPU has chosen ${pcChoice}. ${showResult}`);
+    ">Paper</button>
+
+
+    <!-- press scissor -->
+    <button onclick="
+      myChoice = 'scissor';
+      pcChoice = cpuChoice();
+      showResult = result(myChoice, pcChoice);
+      alert(`You have chosen ${myChoice} .CPU has chosen ${pcChoice}. ${showResult}`);
+    ">Scissor</button>
+  </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
