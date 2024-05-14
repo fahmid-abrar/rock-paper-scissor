@@ -20,8 +20,8 @@
     <button onclick="
       let myChoice = 'rock';
       let pcChoice = cpuChoice();
-      let showResult = result(myChoice, pcChoice);
-      alert(`You have chosen ${myChoice} .CPU has chosen ${pcChoice}. ${showResult}`);
+      let pickWinner = result('rock', pcChoice);
+      showResult(myChoice,pcChoice,pickWinner);
     ">Rock</button>
 
 
@@ -29,8 +29,8 @@
     <button onclick="
       myChoice = 'paper';
       pcChoice = cpuChoice();
-      showResult = result(myChoice, pcChoice);
-      alert(`You have chosen ${myChoice} .CPU has chosen ${pcChoice}. ${showResult}`);
+      pickWinner = result(myChoice, pcChoice);
+      showResult(myChoice,pcChoice,pickWinner);
     ">Paper</button>
 
 
@@ -38,8 +38,8 @@
     <button onclick="
       myChoice = 'scissor';
       pcChoice = cpuChoice();
-      showResult = result(myChoice, pcChoice);
-      alert(`You have chosen ${myChoice} .CPU has chosen ${pcChoice}. ${showResult}`);
+      pickWinner = result(myChoice, pcChoice);
+      showResult(myChoice,pcChoice,pickWinner);
     ">Scissor</button>
   </div>
 
